@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'GPX' target in the 'GPX' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIkit.h>
+#endif
