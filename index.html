@@ -1,74 +1,240 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="iOS GPX Framework : This is a iOS framework for parsing/generating GPX files." />
+	<title>iOS GPX Framework</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<meta name="viewport" content="width=device-width">
 
-    <title>iOS GPX Framework</title>
-  </head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	body {
+	  padding-top: 60px;
+	  padding-bottom: 40px;
+	}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/FLCLjp/iOS-GPX-Framework">Fork Me on GitHub</a>
-
-          <h1 id="project_title">iOS GPX Framework</h1>
-          <h2 id="project_tagline">This is a iOS framework for parsing/generating GPX files.</h2>
-
-          <section id="downloads">
-            <a class="zip_download_link" href="https://github.com/FLCLjp/iOS-GPX-Framework/zipball/master">Download this project as a .zip file</a>
-            <a class="tar_download_link" href="https://github.com/FLCLjp/iOS-GPX-Framework/tarball/master">Download this project as a tar.gz file</a>
-          </section>
-        </header>
+	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="https://github.com/FLCLjp/iOS-GPX-Framework">Fork me on GitHub</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="#overview">Overview</a></li>
+			  <li><a href="#setup">Setup</a></li>
+			  <li><a href="#code">Code</a></li>
+              <li><a href="#apps">Apps</a></li>
+			  <li><a href="#license">License</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+    <div class="container">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <header>
+        <h1>iOS GPX Framework</h1>
+      </header>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact support@github.com and we’ll help you sort it out.</p>
+      <!-- Example row of columns -->
+      <section id="overview">
+        <div class="page-header">
+      	<h2>Overview</h2>
+        </div>
+        <div class="row">
+      	<div class="span4">
+      	  <h3>What is GPX</h3>
+      	  <p>
+	      	GPX is a light-weight XML data format for the interchange of GPS data between applications and Web services on the Internet.
+      		<br>
+      		<a href="http://www.topografix.com/gpx.asp" target="_blank">Read more</a>
+      	  </p>
+      	</div><!-- /.span -->
+      	<div class="span4">
+      	  <h3>Faster and Easier</h3>
+      	  <p>
+	        When you parsing the GPX, you needed to using GPX parser and analyzing the structure of the GPX tags. The GPX Framework parses the GPX from a URL or Strings and create Objective-C Instances of GPX structure.
+      	  </p>
+      	</div><!-- /.span -->
+      	<div class="span4">
+      	  <h3>Open Source</h3>
+      	  <p>
+      		The iOS GPX Framework is open source project, it is absolutely free and can be used as is.
+      		Anyone can modify its codes and make's it as he like.
+      	  </p>
+      	</div><!-- /.span -->
+        </div>
       </section>
-    </div>
+	  
+	  <section id="setup">
+		<div class="page-header">
+		  <h2>Setup</h2>
+		</div>
+		
+		<p><a href="file/GPX_20120411.zip">Download the Framework</a> and unzip it.</p>
+	    
+	    <p>Drag the framework file into the project's Frameworks group, and import the header file.</p>
+<pre>
+#import &lt;GPX/GPX.h&gt;
+</pre>
+	  </section>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">iOS GPX Framework maintained by <a href="https://github.com/FLCLjp">FLCLjp</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+	  <section id="code">
+		<div class="page-header">
+		  <h2>Sample Code</h2>
+		</div>
+	  	  <div class="tabbable">
+	  		<ul class="nav nav-tabs">
+	  	  	  <li class="active"><a href="#parse" data-toggle="tab">Parsing</a></li>
+	  	  	  <li><a href="#generate" data-toggle="tab">Generating</a></li>
+	  		</ul>
+	  		<div class="tab-content">
+	  	  	<div class="tab-pane active" id="parse">
+		  	  <h3>Parsing the GPX</h3>
+		  	  <p>
+		  	    To parsing the GPX file, simply call the parse method.
+		  	  </p>
+<pre>
+GPXRoot *root = [GPXParser parseGPXWithString:gpx];
+</pre>
+	  	  	</div>
+	  	  	<div class="tab-pane" id="generate">
+              <h3>Generating the GPX</h3>
+	  	      <p>
+	  		    To generating the GPX file, creating GPX objects.  
+	  	      </p>
+<pre>
+GPXRoot *root = [GPXRoot rootWithCreator:@"Sample Application"];
+
+GPXWaypoint *waypoint = [root newWaypointWithLatitude:35.658609f longitude:139.745447f];
+waypoint.name = @"Tokyo Tower";
+waypoint.comment = @"The old TV tower in Tokyo.";
+
+GPXTrack *track = [root newTrack];
+track.name = @"My New Track";
+
+[track newTrackpointWithLatitude:35.658609f longitude:139.745447f];
+[track newTrackpointWithLatitude:35.758609f longitude:139.745447f];
+[track newTrackpointWithLatitude:35.828609f longitude:139.745447f];
+</pre>
+	  	  	</div>
+	      </div>
+	  	</div>
+	  </section>
+
+	  <section id="apps">
+		<div class="page-header">
+		  <h2>Sample Applications</h2>
+		</div>
+		
+        <div class="row">
+		  <div class="span6">
+		    <h3>GPX Viewer</h3>
+			<div class="row">
+			  <div class="span4">
+			    <p>
+				   This application parsed the GPX passed from other applications or Safari, and displayed the tracks to the map.
+	    	  	</p>
+	    	  	<p>
+	    	  	  <a class="btn primary" href="https://github.com/FLCLjp/GPX-Viewer" target="_blank">Download Sourcecode from GitHub</a>
+	    	  	</p>
+	    	  	<p>
+		    	  <a href="http://itunes.apple.com/us/app/gpx-viewer/id498178678?mt=8&amp;uo=4" target="itunes_store"><img src="http://ax.phobos.apple.com.edgesuite.net/images/web/linkmaker/badge_appstore-lrg.gif" alt="GPX Viewer - NextBusinessSystem Co., Ltd." style="border: 0;"></a>
+	    	  	</p>
+			  </div>
+			  <div class="span2">
+			    <img src="img/gpx_viewer.png" />
+			  </div>
+		    </div>
+	      </div><!-- /.span -->
+		  <div class="span6">
+			<h3>GPX Logger</h3>
+		    <div class="row">
+		      <div class="span4">
+		    	<p>
+			      This application logging your location and export the log as GPX format.
+		    	</p>
+		    	<p>
+			      <a class="btn primary" href="https://github.com/FLCLjp/GPX-Logger" target="_blank">Download Sourcecode from GitHub</a>
+				</p>
+		      </div>
+		      <div class="span2">
+		    	<img src="img/gpx_logger.png" />
+		      </div>
+		    </div>
+		  </div><!-- /.span -->
+	    </div>
+	  </section>
+
+	  <section id="license">
+		<div class="page-header">
+		  <h2>License and Acknowledgements</h2>
+		</div>
+	    <div class="row">
+	    	<div class="span4">
+	    	  <h3>License</h3>
+	    	  <p>
+		        The iOS GPX Framework is free under the MIT license. You may use the framework for any purpose, including commercial without paying any additional license fees. 
+		      </p>
+	    	</div><!-- /.span -->
+	    	<div class="span4">
+			  <h3>Acknowledgements</h3>
+			  <p>
+			    Acknowledgements of external libraries and components used.
+			  </p>
+			  <ul>
+			    <li><a href="http://www.tbxml.co.uk/">TBXML</a> : Copyright (c) 2009 Tom Bradley</li>
+			  </ul>
+	    	</div><!-- /.span -->
+			<div class="span4">
+			  <h3>Feedback</h3>
+			  <p>
+			    We welcome your feedback, good or bad, as well as any suggestions you may have.
+			    <br>
+			    <a href="mailto:support@nextapps.info">support@nextapps.info</a>
+			  </p>
+	    	</div><!-- /.span -->
+	      </div>
+	  </section>
+
+      <hr>
+
+      <footer>
+        <p class="pull-right">
+	        <a href="#">Back to top</a>
+	    </p>
+		<p>
+	        <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1333526973.html#_=1334032655680&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fgpxframework.com%2F&amp;size=m&amp;text=iOS%20GPX%20Framework%20-%20GPX%20Parsing%2FGenerating%20Framework%20for%20iOS&amp;url=http%3A%2F%2Fgpxframework.com%2F" class="twitter-share-button twitter-count-horizontal" style="width: 107px; height: 20px; " title="Twitter Tweet Button"></iframe>
+	        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	    </p>
+		<p>&copy; NextBusinessSystem Co., Ltd., 2012</p>
       </footer>
-    </div>
 
-    
+    </div> <!-- /container -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
-  </body>
+<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
 </html>
