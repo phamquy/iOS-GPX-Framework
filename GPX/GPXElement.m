@@ -40,6 +40,11 @@
     return self;
 }
 
+- (void)dealloc
+{
+    _parent = nil;
+}
+
 
 #pragma mark - Elements
 
